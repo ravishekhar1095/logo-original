@@ -21,6 +21,7 @@ function App() {
           <Link to="/work">Work</Link>
           <Link to="/pricing">Pricing</Link>
           <Link to="/faq">FAQ</Link>
+          <Link to="/history">History</Link>
         </nav>
         <button className="btn btn--ghost">Book a Call</button>
       </header>
@@ -33,6 +34,7 @@ function App() {
           <Route path="/work" element={<WorkPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/faq" element={<FaqPage />} />
+          <Route path="/history" element={<HistoryPage />} />
         </Routes>
       </main>
 
@@ -55,6 +57,7 @@ function App() {
               <Link to="/process">Process</Link>
               <Link to="/work">Work</Link>
               <Link to="/pricing">Pricing</Link>
+              <Link to="/history">History</Link>
             </div>
           </div>
           <div className="footer__col">
@@ -78,6 +81,7 @@ function App() {
           <p>© 2026 Logo Original. All rights reserved.</p>
           <div className="footer__links">
             <Link to="/faq">FAQ</Link>
+            <Link to="/history">History</Link>
             <span>Privacy</span>
             <span>Terms</span>
           </div>
@@ -138,6 +142,22 @@ function HomePage() {
               <button className="btn btn--dark">Download Sample</button>
             </div>
           </div>
+          <div className="hero__orb"></div>
+        </div>
+      </section>
+
+      <section className="strip">
+        <div className="strip__item">
+          <p>Trusted by product teams and founders</p>
+          <h3>120+ launches worldwide</h3>
+        </div>
+        <div className="strip__item">
+          <p>Clarity-first identity sprints</p>
+          <h3>12 days average delivery</h3>
+        </div>
+        <div className="strip__item">
+          <p>Consistency across touchpoints</p>
+          <h3>Full logo system + guides</h3>
         </div>
       </section>
 
@@ -189,6 +209,80 @@ function HomePage() {
         </div>
       </section>
 
+      <section className="section section--split">
+        <div>
+          <h2>Designed to scale from day one</h2>
+          <p>
+            We balance expressive symbolism with functional rules so your logo
+            works on app icons, storefronts, and investor decks.
+          </p>
+          <div className="proof-grid">
+            <div className="proof-card">
+              <h4>Market fit</h4>
+              <p>Every concept is benchmarked against your category.</p>
+            </div>
+            <div className="proof-card">
+              <h4>Versatility</h4>
+              <p>Lockups, wordmarks, and icon-ready marks included.</p>
+            </div>
+            <div className="proof-card">
+              <h4>Launch ready</h4>
+              <p>We deliver files for web, print, and product teams.</p>
+            </div>
+          </div>
+        </div>
+        <div className="proof-panel">
+          <h3>What clients receive</h3>
+          <ul>
+            <li>Primary and secondary logo lockups</li>
+            <li>Symbol mark + logotype</li>
+            <li>Color palette with usage guidance</li>
+            <li>Typography pairing recommendations</li>
+            <li>Spacing and clear-space rules</li>
+          </ul>
+          <button className="btn btn--primary">View Deliverables</button>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section__head">
+          <h2>Client results</h2>
+          <p>Brands that moved from generic to iconic with Logo Original.</p>
+        </div>
+        <div className="testimonial-grid">
+          <article className="testimonial-card">
+            <p>
+              “They turned our scattered ideas into a clean identity system we
+              could scale across product and marketing.”
+            </p>
+            <div className="testimonial-meta">
+              <span>Amrita Rao</span>
+              <span>Founder, Brightly</span>
+            </div>
+          </article>
+          <article className="testimonial-card">
+            <p>
+              “Fast, thoughtful, and highly collaborative. The new logo made our
+              launch feel premium instantly.”
+            </p>
+            <div className="testimonial-meta">
+              <span>Jordan Lee</span>
+              <span>Head of Design, Northlane</span>
+            </div>
+          </article>
+          <article className="testimonial-card">
+            <p>
+              “Every file was organized and ready for product teams. We had
+              zero friction rolling out the new identity.”
+            </p>
+            <div className="testimonial-meta">
+              <span>Marina Souza</span>
+              <span>Brand Lead, EchoWorks</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section className="cta">
         <div>
           <h2>Ready for a logo that lasts?</h2>
@@ -214,6 +308,29 @@ function ServicesPage() {
           market and audience.
         </p>
       </div>
+      <div className="page__info">
+        <div>
+          <h3>Who it is for</h3>
+          <p>
+            New ventures, scale-ups, and established brands that need a
+            distinct identity across product, marketing, and physical touchpoints.
+          </p>
+        </div>
+        <div>
+          <h3>Typical timeline</h3>
+          <p>
+            Strategy + concepting in week one, refinement in week two, and final
+            delivery by week three.
+          </p>
+        </div>
+        <div>
+          <h3>Collaboration</h3>
+          <p>
+            You get structured checkpoints, async reviews, and live feedback
+            sessions to keep momentum.
+          </p>
+        </div>
+      </div>
       <div className="cards">
         <article className="card">
           <h3>Logo Strategy Sprint</h3>
@@ -222,6 +339,7 @@ function ServicesPage() {
             <li>Brand questionnaire + workshop</li>
             <li>Competitor analysis</li>
             <li>Creative positioning board</li>
+            <li>Verbal + visual tone recommendations</li>
           </ul>
         </article>
         <article className="card">
@@ -231,6 +349,7 @@ function ServicesPage() {
             <li>3 visual routes</li>
             <li>Typography pairing</li>
             <li>Color exploration</li>
+            <li>Grid + spacing logic</li>
           </ul>
         </article>
         <article className="card">
@@ -240,8 +359,17 @@ function ServicesPage() {
             <li>Export suite + favicon</li>
             <li>Social templates</li>
             <li>Mini brand guide</li>
+            <li>Launch checklist + file naming</li>
           </ul>
         </article>
+      </div>
+      <div className="page__callout">
+        <h3>Need a custom scope?</h3>
+        <p>
+          We can add brand strategy, naming support, or a full identity rollout
+          across packaging and product UI.
+        </p>
+        <button className="btn btn--dark">Request a Custom Scope</button>
       </div>
     </section>
   );
@@ -287,6 +415,29 @@ function ProcessPage() {
           </div>
         </div>
       </div>
+      <div className="page__info">
+        <div>
+          <h3>Weekly touchpoints</h3>
+          <p>
+            We send progress updates every 2-3 days, with clear next steps and
+            a running decision log.
+          </p>
+        </div>
+        <div>
+          <h3>Revision approach</h3>
+          <p>
+            Feedback is captured in one place, then distilled into targeted
+            iteration rounds.
+          </p>
+        </div>
+        <div>
+          <h3>Delivery package</h3>
+          <p>
+            Final delivery includes files organized for web, print, and product
+            teams with usage notes.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
@@ -303,19 +454,31 @@ function WorkPage() {
         <article className="work-card">
           <div className="work-card__logo">LYRA</div>
           <p>Fintech platform, geometric monogram, bold typography.</p>
+          <span className="work-card__tag">Fintech</span>
         </article>
         <article className="work-card">
           <div className="work-card__logo work-card__logo--soft">PINE</div>
           <p>Eco marketplace, organic icon system, warm palette.</p>
+          <span className="work-card__tag">Eco</span>
         </article>
         <article className="work-card">
           <div className="work-card__logo work-card__logo--outline">NIMB</div>
           <p>SaaS analytics, clean wordmark, high-contrast layout.</p>
+          <span className="work-card__tag">SaaS</span>
         </article>
         <article className="work-card">
           <div className="work-card__logo work-card__logo--mono">RUNE</div>
           <p>Creative studio, serif + symbol lockups, flexible use.</p>
+          <span className="work-card__tag">Studio</span>
         </article>
+      </div>
+      <div className="page__callout">
+        <h3>Want to see a full case study?</h3>
+        <p>
+          We can share process decks, research summaries, and the before/after
+          logo system for deeper review.
+        </p>
+        <button className="btn btn--primary">Request Case Studies</button>
       </div>
     </section>
   );
@@ -332,38 +495,55 @@ function PricingPage() {
       <div className="pricing">
         <article className="price-card">
           <h3>Essentials</h3>
-          <p className="price">$1,200</p>
+          <p className="price">$99</p>
           <p className="price-note">Ideal for new businesses</p>
           <ul>
             <li>2 logo concepts</li>
             <li>1 revision round</li>
             <li>Primary logo files</li>
+            <li>48-hour response time</li>
           </ul>
           <button className="btn btn--light">Choose Essentials</button>
         </article>
         <article className="price-card price-card--featured">
           <h3>Studio Sprint</h3>
-          <p className="price">$2,400</p>
+          <p className="price">$199</p>
           <p className="price-note">Most popular</p>
           <ul>
             <li>3 logo concepts</li>
             <li>3 revision rounds</li>
             <li>Brand palette + type</li>
             <li>Full export suite</li>
+            <li>Launch-ready brand guide</li>
           </ul>
           <button className="btn btn--primary">Choose Studio</button>
         </article>
         <article className="price-card">
           <h3>Launch Partner</h3>
-          <p className="price">$3,800</p>
+          <p className="price">$300</p>
           <p className="price-note">For teams + agencies</p>
           <ul>
             <li>4 concepts + workshops</li>
             <li>Extended brand guide</li>
             <li>Marketing asset kit</li>
+            <li>Hands-on implementation support</li>
           </ul>
           <button className="btn btn--light">Choose Partner</button>
         </article>
+      </div>
+      <div className="page__info">
+        <div>
+          <h3>Payment schedule</h3>
+          <p>50% deposit to begin, 50% on final delivery.</p>
+        </div>
+        <div>
+          <h3>Guarantee</h3>
+          <p>We keep refining until your team signs off on the final direction.</p>
+        </div>
+        <div>
+          <h3>Add-ons</h3>
+          <p>Brand naming, messaging kits, and social launch packs.</p>
+        </div>
       </div>
     </section>
   );
@@ -393,6 +573,149 @@ function FaqPage() {
         <div className="faq-item">
           <h4>Can you refresh an existing logo?</h4>
           <p>Absolutely. We can modernize or expand an existing system.</p>
+        </div>
+        <div className="faq-item">
+          <h4>How many revisions are included?</h4>
+          <p>Each package includes revision rounds tailored to the scope.</p>
+        </div>
+        <div className="faq-item">
+          <h4>Do you work with global teams?</h4>
+          <p>Yes, we collaborate across time zones with async check-ins.</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function HistoryPage() {
+  return (
+    <section className="page">
+      <div className="page__hero">
+        <p className="eyebrow">History</p>
+        <h1>Logo history, evolution, and meaning.</h1>
+        <p className="lead">
+          A living archive of iconic identity changes and the design decisions
+          behind them.
+        </p>
+      </div>
+
+      <div className="history-grid">
+        <article className="history-card">
+          <div className="history-card__head">
+            <h3>Apple</h3>
+            <span>1976 → today</span>
+          </div>
+          <p>
+            From a complex illustrated seal to the simplified bitten apple, the
+            brand moved toward immediate recognition and scalability across
+            digital products.
+          </p>
+          <div className="history-card__meta">
+            <span>Meaning</span>
+            <p>Innovation, curiosity, and approachability.</p>
+          </div>
+        </article>
+
+        <article className="history-card">
+          <div className="history-card__head">
+            <h3>Toyota</h3>
+            <span>1989 → today</span>
+          </div>
+          <p>
+            The overlapping ovals symbolize the relationship between customer
+            and company, with a unified form that reads as a “T.”
+          </p>
+          <div className="history-card__meta">
+            <span>Meaning</span>
+            <p>Trust, craftsmanship, and global reliability.</p>
+          </div>
+        </article>
+
+        <article className="history-card">
+          <div className="history-card__head">
+            <h3>Pepsi</h3>
+            <span>1898 → today</span>
+          </div>
+          <p>
+            The globe mark evolved from a vintage wordmark to a dynamic symbol
+            built for digital motion and shelf impact.
+          </p>
+          <div className="history-card__meta">
+            <span>Meaning</span>
+            <p>Energy, youth, and movement.</p>
+          </div>
+        </article>
+
+        <article className="history-card">
+          <div className="history-card__head">
+            <h3>BMW</h3>
+            <span>1917 → today</span>
+          </div>
+          <p>
+            The roundel retains heritage while simplifying line weight and
+            color for modern applications.
+          </p>
+          <div className="history-card__meta">
+            <span>Meaning</span>
+            <p>Precision engineering and performance.</p>
+          </div>
+        </article>
+
+        <article className="history-card">
+          <div className="history-card__head">
+            <h3>Google</h3>
+            <span>1999 → today</span>
+          </div>
+          <p>
+            A clean geometric wordmark replaced the serif logo, reinforcing
+            clarity and accessibility across products.
+          </p>
+          <div className="history-card__meta">
+            <span>Meaning</span>
+            <p>Simplicity, openness, and speed.</p>
+          </div>
+        </article>
+
+        <article className="history-card">
+          <div className="history-card__head">
+            <h3>Mastercard</h3>
+            <span>2016 → today</span>
+          </div>
+          <p>
+            The interlocking circles were preserved while the wordmark
+            simplified for modern readability.
+          </p>
+          <div className="history-card__meta">
+            <span>Meaning</span>
+            <p>Connection, trust, and global commerce.</p>
+          </div>
+        </article>
+      </div>
+
+      <div className="history-news">
+        <h3>More articles</h3>
+        <div className="history-news__list">
+          <div>
+            <p className="history-news__title">Why tech brands keep flattening their logos</p>
+            <p>
+              A quick look at how responsive design and app icons shaped modern
+              logo decisions.
+            </p>
+          </div>
+          <div>
+            <p className="history-news__title">The return of retro wordmarks</p>
+            <p>
+              Serif and vintage-inspired marks are back as brands chase warmth
+              and authenticity.
+            </p>
+          </div>
+          <div>
+            <p className="history-news__title">Symbol vs. wordmark: choosing the right direction</p>
+            <p>
+              How to decide which approach helps recognition and recall in your
+              market.
+            </p>
+          </div>
         </div>
       </div>
     </section>
