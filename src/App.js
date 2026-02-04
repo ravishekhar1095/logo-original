@@ -129,17 +129,51 @@ function HomePage() {
           </div>
         </div>
         <div className="hero__visual">
-          <div className="logo-card">
-            <span className="logo-card__badge">Logo Original Sprint</span>
-            <div className="logo-grid">
-              <div className="logo-sample">AUR</div>
-              <div className="logo-sample logo-sample--outline">KITE</div>
-              <div className="logo-sample logo-sample--mono">NOX</div>
-              <div className="logo-sample logo-sample--soft">SOL</div>
+          <div className="future-panel">
+            <div className="future-panel__top">
+              <span className="future-chip">AI Identity Engine</span>
+              <span className="future-status">Live · 2026</span>
             </div>
-            <div className="logo-card__footer">
-              <p>Custom marks + typography pairs</p>
-              <button className="btn btn--dark">Download Sample</button>
+            <div className="future-core">
+              <div className="future-core__ring"></div>
+              <div className="future-core__ring future-core__ring--mid"></div>
+              <div className="future-core__ring future-core__ring--inner"></div>
+              <div className="future-core__mark">
+                <span>LO</span>
+                <span>AI</span>
+              </div>
+            </div>
+            <div className="future-wave">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div className="future-grid">
+              <div>
+                <p className="future-label">Signal</p>
+                <h4>Concept to icon</h4>
+              </div>
+              <div>
+                <p className="future-label">System</p>
+                <h4>Logo + lockups</h4>
+              </div>
+              <div>
+                <p className="future-label">Output</p>
+                <h4>SVG · PNG · PDF</h4>
+              </div>
+              <div>
+                <p className="future-label">Speed</p>
+                <h4>7–12 days</h4>
+              </div>
+            </div>
+            <div className="future-panel__footer">
+              <p>Futuristic identity with human direction.</p>
+              <button className="btn btn--dark">Explore AI Flow</button>
             </div>
           </div>
           <div className="hero__orb"></div>
